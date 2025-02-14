@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #000;
+}
+
+.box1{
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    background-color: aqua;
+    animation: slider1 3s linear infinite alternate-reverse;
+}
+
+.box2{
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    bottom: 0%;
+    background-color: red;
+    animation: slider2 3s ease-in-out infinite alternate-reverse;
+}
+
+.ball{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    animation: ball 3s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes slider1 {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 85%;
+    }
+}
+
+@keyframes slider2 {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 85%;
+    }
+}
+
+@keyframes ball {
+    0%{
+        top: 3%;
+        left: 0%;
+    }
+    25%{
+        top: 92%;
+        left: 25%;
+    }
+    50%{
+        top: 3%;
+        left: 50%;
+    }
+    75%{
+        top: 92%;
+        left: 75%;
+    }
+    100%{
+        top: 3%;
+        left: 96%;
+    }
+}
